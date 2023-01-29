@@ -3,7 +3,12 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(180deg, rgba(171, 145, 115, 0) 18.75%, rgba(171, 145, 115, 0.4) 74.48%, #AB9173 100%);
+    background: linear-gradient(
+        180deg,
+        rgba(171, 145, 115, 0) 18.75%,
+        rgba(171, 145, 115, 0.4) 74.48%,
+        #ab9173 100%
+    );
 }
 .flower {
     position: absolute;
@@ -31,7 +36,7 @@
 }
 .rolam-text {
     margin-top: 40px;
-    color: var(--darkGreen);    
+    color: var(--darkGreen);
     font-weight: 400;
     z-index: 2;
 }
@@ -50,22 +55,26 @@
     width: 40vw;
     top: calc(50% - 275px);
     right: 0;
-    background-image: url("../assets/pexels-cottonbro-studio-7235060.jpg" );
+    background-image: url("../assets/pexels-cottonbro-studio-7235060.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 400px 0px 0px 400px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    z-index: 3;    
+    z-index: 3;
 }
 .rolam-kep-bck {
     position: absolute;
     align-self: center;
     height: 670px;
-    width: calc(40vw + 10px); 
+    width: calc(40vw + 10px);
     top: calc(50% - 285px);
     right: 0;
-    background: linear-gradient(180deg, rgba(208, 193, 176, 0.27) 100%, rgba(212, 205, 197, 0) 100%);
+    background: linear-gradient(
+        180deg,
+        rgba(208, 193, 176, 0.27) 100%,
+        rgba(212, 205, 197, 0) 100%
+    );
     box-shadow: 2px 4px 5px 4px #00000027;
     border-radius: 400px 0px 0px 400px;
     z-index: 2;
@@ -85,7 +94,7 @@
     .rolam-left {
         max-width: 40%;
     }
-    .rolam-kep { 
+    .rolam-kep {
         height: 650px;
         right: 10px;
         border-radius: 300px 300px 300px 300px;
@@ -109,7 +118,7 @@
     .rolam {
         flex-direction: column-reverse;
         position: inherit;
-        height: fit-content;        
+        height: fit-content;
     }
     .rolam-left {
         width: 90vw;
@@ -160,7 +169,7 @@
         padding-top: 50px;
         margin-bottom: unset;
     }
-    .rolam-cim { 
+    .rolam-cim {
         font-size: 40px;
     }
     .rolam-kep-bck {

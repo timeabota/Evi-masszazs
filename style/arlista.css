@@ -28,16 +28,16 @@
     height: 80vh;
     z-index: 6;
 }
-.arlista-mirror{
+.arlista-mirror {
     position: absolute;
     top: -15px;
     right: calc(50% - 20vw - 15px);
     width: calc(40vw + 30px);
     height: calc(100% + 30px);
-    border: 1px solid #D0C1B0;
+    border: 1px solid #d0c1b0;
     border-radius: 100px;
 }
-.arlista-content{
+.arlista-content {
     height: fit-content;
     padding: 100px 40px 100px 40px;
     background: rgba(208, 193, 176, 0.5);
@@ -74,20 +74,20 @@
 }
 
 /*maxwidth-queryk*/
-@media screen and (max-width: 1580px) { 
+@media screen and (max-width: 1580px) {
     .arlista-content {
         padding: 40px 20px 40px 20px;
     }
 }
 
-@media screen and (max-width: 1440px) { 
+@media screen and (max-width: 1440px) {
     .arlista-content {
         padding: 40px 20px 40px 20px;
     }
 }
 
 @media screen and (max-width: 1280px) {
-    .arlista-jobb-hasab { 
+    .arlista-jobb-hasab {
         width: 100vw;
         right: unset;
     }
@@ -143,8 +143,8 @@
 @media screen and (max-width: 375px) {
     .price * {
         font-size: 18px;
-     }
-    .price .arlista-cim { 
+    }
+    .price .arlista-cim {
         max-width: 75%;
     }
     .arlista-szoveg {
@@ -152,12 +152,11 @@
     }
 }
 
-@media screen and (max-width: 375px),
-       screen and (max-height: 770px) {
+@media screen and (max-width: 375px), screen and (max-height: 770px) {
     .arlista-szoveg {
         padding-bottom: 15px;
     }
-    .arlista-content { 
+    .arlista-content {
         border-radius: 50px;
     }
     .arlista-mirror {

@@ -1,11 +1,11 @@
 :root {
-    --brown: #AB9173;
+    --brown: #ab9173;
     --white: #ffffff;
-    --darkGreen: #18201C;
-    --lightGreen: #B4CCB5;
-    --font-head-title: 'Marcellus', serif;
-    --mainFont: 'Karma', serif;
-    --navFont: 'Marcellus SC', serif;
+    --darkGreen: #18201c;
+    --lightGreen: #b4ccb5;
+    --font-head-title: "Marcellus", serif;
+    --mainFont: "Karma", serif;
+    --navFont: "Marcellus SC", serif;
 }
 
 * {

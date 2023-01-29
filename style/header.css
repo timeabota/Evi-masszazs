@@ -1,6 +1,6 @@
 .header-bar {
     display: flex;
-    position: sticky;   
+    position: sticky;
     top: 0px;
     height: 80px;
     width: 100%;
@@ -19,17 +19,17 @@
 .nav-logo {
     position: inherit;
     align-self: center;
-    width: 185px;  
+    width: 185px;
     height: 63px;
     top: 14px;
 }
-.nav-containter{
+.nav-containter {
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     width: 100vw;
-    height: 80px;    
+    height: 80px;
     z-index: 8;
 }
 .nav-list {
@@ -71,7 +71,7 @@
 
 /*max-width query*/
 @media screen and (max-width: 1280px) {
-    .nav-list { 
+    .nav-list {
         position: inherit;
         right: 0px;
         width: 80vw;
@@ -86,7 +86,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .nav-list { 
+    .nav-list {
         display: none;
     }
     .nav-list.active {

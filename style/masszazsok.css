@@ -1,4 +1,4 @@
-.masszazsok { 
+.masszazsok {
     position: relative;
     background-color: var(--brown);
     overflow-y: hidden;
@@ -52,27 +52,31 @@
     display: flex;
     justify-content: center;
     position: relative;
-    transition: .5s ease-out;
+    transition: 0.5s ease-out;
 }
 .szolgaltatas-img1 {
     position: absolute;
     top: 10px;
     height: 350px;
     width: 300px;
-    background-image: url("../assets/pexels-cottonbro-studio-7235051.jpg" );
+    background-image: url("../assets/pexels-cottonbro-studio-7235051.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 200px;
-    filter:drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
     z-index: 4;
-    transition: .5s ease-out;
+    transition: 0.5s ease-out;
 }
 .kep-kor {
     position: absolute;
     height: 370px;
     width: 320px;
-    background: linear-gradient(180deg, rgba(208, 193, 176, 0.27) 100%, rgba(212, 205, 197, 0) 100%);
+    background: linear-gradient(
+        180deg,
+        rgba(208, 193, 176, 0.27) 100%,
+        rgba(212, 205, 197, 0) 100%
+    );
     border-radius: 200px;
     box-shadow: 2px 4px 5px 4px #00000027;
     z-index: 3;
@@ -87,9 +91,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 200px;
-    filter:drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
     z-index: 4;
-    transition: .5s ease-out;
+    transition: 0.5s ease-out;
 }
 .szolgaltatas-img3 {
     position: absolute;
@@ -101,9 +105,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 200px;
-    filter:drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
     z-index: 4;
-    transition: .5s ease-out;
+    transition: 0.5s ease-out;
 }
 .szolgaltatas-mirror {
     width: 400px;
@@ -125,7 +129,7 @@
     font-weight: 400;
     font-size: 40px;
     color: var(--darkGreen);
-    text-align: center;    
+    text-align: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .szolgaltatas-text {
@@ -171,15 +175,15 @@
 }
 .szolgaltatas:hover .szolgaltatas-img1 {
     opacity: 0.6;
-    transition: .5s ease-out;
+    transition: 0.5s ease-out;
 }
 .szolgaltatas:hover .szolgaltatas-img2 {
     opacity: 0.6;
-    transition: .5s ease-out;
+    transition: 0.5s ease-out;
 }
 .szolgaltatas:hover .szolgaltatas-img3 {
     opacity: 0.6;
-    transition: .5s ease-out;
+    transition: 0.5s ease-out;
 }
 
 /*minwidth query*/
@@ -225,7 +229,7 @@
     }
 }
 
-@media screen and (max-width: 1023px) { 
+@media screen and (max-width: 1023px) {
     .masszazsok-top {
         flex-direction: column;
         margin-bottom: 50px;
@@ -236,7 +240,7 @@
     .szolgaltatas-mirror {
         display: flex;
         justify-content: center;
-        align-items:flex-end;
+        align-items: flex-end;
         flex-direction: column;
         width: unset;
         height: 300px;
@@ -277,7 +281,7 @@
     }
 }
 
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 768px) {
     .szolgaltatas-mirror {
         border-radius: 100px 130px 130px 100px;
     }
@@ -302,7 +306,7 @@
     }
 }
 
-@media screen and (max-width: 628px) { 
+@media screen and (max-width: 628px) {
     .szolgaltatas {
         justify-content: center;
         align-items: center;
@@ -351,7 +355,7 @@
     }
 }
 
-@media screen and (max-width: 425px) { 
+@media screen and (max-width: 425px) {
     .masszazsok-top {
         top: 150px;
     }

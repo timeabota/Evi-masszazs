@@ -56,7 +56,7 @@
 @media screen and (max-width: 768px) {
     .mirror-glass {
         display: flex;
-        justify-content:center;
+        justify-content: center;
         width: 100vw;
         position: absolute;
         height: fit-content;
