@@ -1,0 +1,75 @@
+.fooldal {
+    display: flex;
+    justify-content: center;
+}
+.fooldal-hatter {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: url("../assets/pexels-alesia-kozik-7796159.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+}
+.mirror-glass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    width: 33vw;
+    height: 100vh;
+    background: rgba(208, 193, 176, 0.27);
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2.5px);
+}
+.fooldal-logo {
+    margin-bottom: 1rem;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.fooldal-ismerdmeg {
+    margin: 5px;
+    font-family: var(--navFont);
+    font-size: 15px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.fooldal-arrow {
+    width: 18px;
+    margin-bottom: 30px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*mediascreen max-width*/
+@media screen and (max-width: 1024px) {
+    .mirror-glass {
+        width: 50vw;
+    }
+    .fooldal-logo {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mirror-glass {
+        display: flex;
+        justify-content:center;
+        width: 100vw;
+        position: absolute;
+        height: fit-content;
+        top: calc(25vh);
+    }
+    .fooldal-logo {
+        max-width: 340px;
+        max-height: fit-content;
+        margin: 0;
+        margin-top: 10px;
+    }
+    .fooldal-arrow {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}

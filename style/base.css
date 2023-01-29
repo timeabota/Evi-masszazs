@@ -1,0 +1,40 @@
+:root {
+    --brown: #AB9173;
+    --white: #ffffff;
+    --darkGreen: #18201C;
+    --lightGreen: #B4CCB5;
+    --font-head-title: 'Marcellus', serif;
+    --mainFont: 'Karma', serif;
+    --navFont: 'Marcellus SC', serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: var(--white);
+}
+
+img {
+    width: 100%;
+}
+
+html {
+    font-size: 17px;
+    min-width: 280px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--mainFont);
+    color: var(--darkGreen);
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: transparent;
+}

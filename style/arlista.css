@@ -1,0 +1,166 @@
+.arlista {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    overflow-y: hidden;
+}
+.arlista-hatter {
+    position: absolute;
+    left: 0px;
+    height: 100vh;
+    width: inherit;
+    background-image: url("../assets/pexels-alesia-kozik-7795845.jpg");
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scaleX(-1);
+    z-index: 4;
+}
+.arlista-jobb-hasab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: calc(50% - 40vh);
+    right: calc(50% - 40vw);
+    width: 40vw;
+    height: 80vh;
+    z-index: 6;
+}
+.arlista-mirror{
+    position: absolute;
+    top: -15px;
+    right: calc(50% - 20vw - 15px);
+    width: calc(40vw + 30px);
+    height: calc(100% + 30px);
+    border: 1px solid #D0C1B0;
+    border-radius: 100px;
+}
+.arlista-content{
+    height: fit-content;
+    padding: 100px 40px 100px 40px;
+    background: rgba(208, 193, 176, 0.5);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px);
+    border-radius: 100px;
+}
+.szolgaltatas-arlista {
+    position: relative;
+    padding-bottom: 40px;
+    font-family: var(--font-head-title);
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    color: var(--darkGreen);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 5;
+}
+.price {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.arlista-cim {
+    color: var(--darkGreen);
+}
+.arlista-ar {
+    color: var(--darkGreen);
+    white-space: nowrap;
+}
+.arlista-szoveg {
+    color: var(--darkGreen);
+    padding-bottom: 30px;
+}
+
+/*maxwidth-queryk*/
+@media screen and (max-width: 1580px) { 
+    .arlista-content {
+        padding: 40px 20px 40px 20px;
+    }
+}
+
+@media screen and (max-width: 1440px) { 
+    .arlista-content {
+        padding: 40px 20px 40px 20px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .arlista-jobb-hasab { 
+        width: 100vw;
+        right: unset;
+    }
+    .arlista-content {
+        margin: 0px 150px 0px 150px;
+    }
+    .arlista-mirror {
+        width: calc(100% + 30px);
+        top: -15px;
+        right: -15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .arlista-content {
+        margin: 20px;
+        padding: 20px 40px 20px 40px;
+    }
+    .arlista-hatter {
+        background-position: -200px 0px;
+    }
+    .arlista-mirror {
+        top: -15px;
+        right: -15px;
+        width: calc(100% + 30px);
+    }
+    .szolgaltatas-arlista {
+        font-size: 30px;
+    }
+    .arlista-cim {
+        font-size: 20px;
+    }
+    .arlista-ar {
+        font-size: 20px;
+    }
+    .arlista-szoveg {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .arlista {
+        height: auto;
+    }
+    .arlista-hatter {
+        background-position: 0px 0px;
+    }
+    .arlista-content {
+        padding: 20px 10px 20px 10px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .price * {
+        font-size: 18px;
+     }
+    .price .arlista-cim { 
+        max-width: 75%;
+    }
+    .arlista-szoveg {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 375px),
+       screen and (max-height: 770px) {
+    .arlista-szoveg {
+        padding-bottom: 15px;
+    }
+    .arlista-content { 
+        border-radius: 50px;
+    }
+    .arlista-mirror {
+        border-radius: 50px;
+    }
+}

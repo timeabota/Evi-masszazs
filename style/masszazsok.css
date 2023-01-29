@@ -1,0 +1,358 @@
+.masszazsok { 
+    position: relative;
+    background-color: var(--brown);
+    overflow-y: hidden;
+}
+.virag1 {
+    position: absolute;
+    top: 150px;
+    left: -200px;
+    width: 45%;
+    height: 45%;
+    background-image: url("../assets/flower2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.8;
+    z-index: 1;
+}
+.virag2 {
+    position: absolute;
+    top: -100px;
+    right: -600px;
+    width: 90%;
+    height: 90%;
+    background-image: url("../assets/flower2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.8;
+    z-index: 1;
+}
+.virag3 {
+    position: absolute;
+    top: 750px;
+    width: 50%;
+    height: 50%;
+    background-image: url("../assets/flower2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.8;
+    z-index: 1;
+}
+.masszazsok-top {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 100px;
+}
+.szolgaltatas {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transition: .5s ease-out;
+}
+.szolgaltatas-img1 {
+    position: absolute;
+    top: 10px;
+    height: 350px;
+    width: 300px;
+    background-image: url("../assets/pexels-cottonbro-studio-7235051.jpg" );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 200px;
+    filter:drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
+    z-index: 4;
+    transition: .5s ease-out;
+}
+.kep-kor {
+    position: absolute;
+    height: 370px;
+    width: 320px;
+    background: linear-gradient(180deg, rgba(208, 193, 176, 0.27) 100%, rgba(212, 205, 197, 0) 100%);
+    border-radius: 200px;
+    box-shadow: 2px 4px 5px 4px #00000027;
+    z-index: 3;
+}
+.szolgaltatas-img2 {
+    position: absolute;
+    top: 10px;
+    height: 350px;
+    width: 300px;
+    background-image: url("../assets/pexels-koolshooters-6628700.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 200px;
+    filter:drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
+    z-index: 4;
+    transition: .5s ease-out;
+}
+.szolgaltatas-img3 {
+    position: absolute;
+    top: 10px;
+    height: 350px;
+    width: 300px;
+    background-image: url("../assets/pexels-cottonbro-studio-7235060.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 200px;
+    filter:drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
+    z-index: 4;
+    transition: .5s ease-out;
+}
+.szolgaltatas-mirror {
+    width: 400px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 200px;
+    background: rgba(208, 193, 176, 0.2);
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 5px 30px 10px #00000027;
+    border-radius: 150px;
+    z-index: 2;
+}
+.szolgaltatas-cim {
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    font-family: var(--font-head-title);
+    font-weight: 400;
+    font-size: 40px;
+    color: var(--darkGreen);
+    text-align: center;    
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.szolgaltatas-text {
+    padding-right: 64px;
+    padding-left: 64px;
+    padding-bottom: 130px;
+    text-align: center;
+    color: var(--darkGreen);
+}
+.masszazsok-bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    z-index: 3;
+}
+.szolgaltatas-mirror1 {
+    width: 80vw;
+    margin: 20px;
+    background: rgba(208, 193, 176, 0.2);
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 5px 30px 10px #00000027;
+    border-radius: 150px;
+    z-index: 3;
+}
+.szolgaltatas-cim1 {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    font-family: var(--font-head-title);
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    color: var(--darkGreen);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 3;
+}
+.szolgaltatas-text1 {
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: var(--darkGreen);
+    z-index: 3;
+}
+.szolgaltatas:hover .szolgaltatas-img1 {
+    opacity: 0.6;
+    transition: .5s ease-out;
+}
+.szolgaltatas:hover .szolgaltatas-img2 {
+    opacity: 0.6;
+    transition: .5s ease-out;
+}
+.szolgaltatas:hover .szolgaltatas-img3 {
+    opacity: 0.6;
+    transition: .5s ease-out;
+}
+
+/*minwidth query*/
+@media screen and (min-width: 1440px) {
+    .szolgaltatas-mirror1 {
+        max-width: 1450px;
+        margin-bottom: 100px;
+    }
+    .masszazsok-bottom {
+        padding-top: 150px;
+    }
+}
+
+/*maxwidth-query*/
+@media screen and (max-width: 1439px) {
+    .szolgaltatas-cim {
+        padding: unset;
+        padding-top: 200px;
+        padding-bottom: 20px;
+        font-size: 35px;
+    }
+    .szolgaltatas-text {
+        padding: unset;
+        padding: 10px;
+    }
+    .szolgaltatas-mirror {
+        height: 650px;
+        width: 300px;
+        margin: unset;
+        margin-top: 200px;
+    }
+    .szolgaltatas {
+        margin: 20px;
+    }
+    .szolgaltatas-cim1 {
+        font-size: 35px;
+    }
+    .szolgaltatas-mirror1 {
+        width: unset;
+    }
+    .masszazsok-bottom {
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 1023px) { 
+    .masszazsok-top {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .szolgaltatas {
+        justify-content: flex-end;
+    }
+    .szolgaltatas-mirror {
+        display: flex;
+        justify-content: center;
+        align-items:flex-end;
+        flex-direction: column;
+        width: unset;
+        height: 300px;
+        margin-top: unset;
+    }
+    .szolgaltatas-img1 {
+        width: 200px;
+        height: 280px;
+        right: 10px;
+    }
+    .szolgaltatas-img2 {
+        width: 200px;
+        height: 280px;
+        right: 10px;
+    }
+    .szolgaltatas-img3 {
+        width: 200px;
+        height: 280px;
+        right: 10px;
+    }
+    .kep-kor {
+        width: 220px;
+        height: 300px;
+    }
+    .szolgaltatas-cim {
+        padding-top: unset;
+        margin-right: 250px;
+        text-align: right;
+    }
+    .szolgaltatas-text {
+        margin-bottom: unset;
+        margin-left: 20px;
+        margin-right: 250px;
+        text-align: right;
+    }
+    .masszazsok-bottom {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    .szolgaltatas-mirror {
+        border-radius: 100px 130px 130px 100px;
+    }
+    .szolgaltatas-cim {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    .szolgaltatas-text {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    .szolgaltatas-cim1 {
+        font-size: 30px;
+    }
+    .szolgaltatas-mirror1 {
+        border-radius: 100px;
+    }
+    .szolgaltatas-text1 {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 628px) { 
+    .szolgaltatas {
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+    }
+    .kep-kor {
+        top: -100px;
+        height: 170px;
+        width: 170px;
+    }
+    .szolgaltatas-img1 {
+        top: -90px;
+        right: unset;
+        height: 150px;
+        width: 150px;
+    }
+    .szolgaltatas-img2 {
+        top: -90px;
+        right: unset;
+        height: 150px;
+        width: 150px;
+    }
+    .szolgaltatas-img3 {
+        top: -90px;
+        right: unset;
+        height: 150px;
+        width: 150px;
+    }
+    .szolgaltatas-mirror {
+        align-items: center;
+        width: unset;
+        height: unset;
+        margin: 0px 10px 100px 10px;
+        border-radius: 60px;
+    }
+    .szolgaltatas-cim {
+        padding-top: 100px;
+        margin: unset;
+        text-align: center;
+    }
+    .szolgaltatas-text {
+        padding: unset;
+        padding: 0px 10px 50px 10px;
+        margin: unset;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 425px) { 
+    .masszazsok-top {
+        top: 150px;
+    }
+}
