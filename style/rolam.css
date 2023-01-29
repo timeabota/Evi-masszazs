@@ -55,7 +55,7 @@
     width: 40vw;
     top: calc(50% - 275px);
     right: 0;
-    background-image: url("../assets/pexels-cottonbro-studio-7235060.jpg");
+    background-image: url("../assets/pexels-cottonbro-studio-7235057.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -112,6 +112,9 @@
     .rolam-left {
         padding: 30px;
     }
+    .flower {
+        left: -400px;
+    }
 }
 
 @media screen and (max-width: 1023px) {
@@ -119,6 +122,10 @@
         flex-direction: column-reverse;
         position: inherit;
         height: fit-content;
+    }
+    .flower {
+        left: 0px;
+        top: 700px;
     }
     .rolam-left {
         width: 90vw;
@@ -161,6 +168,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    .flower {
+        top: 1000px;
+    }
     .rolam-left {
         max-width: 95vw;
         padding: unset;

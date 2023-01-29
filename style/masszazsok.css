@@ -9,7 +9,7 @@
     left: -200px;
     width: 45%;
     height: 45%;
-    background-image: url("../assets/flower2.png");
+    background-image: url("../assets/flower1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -22,7 +22,7 @@
     right: -600px;
     width: 90%;
     height: 90%;
-    background-image: url("../assets/flower2.png");
+    background-image: url("../assets/flower1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -34,7 +34,7 @@
     top: 750px;
     width: 50%;
     height: 50%;
-    background-image: url("../assets/flower2.png");
+    background-image: url("../assets/flower1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -46,6 +46,7 @@
     justify-content: center;
     flex-wrap: wrap;
     position: relative;
+    overflow-y: hidden;
     top: 100px;
 }
 .szolgaltatas {
@@ -59,7 +60,7 @@
     top: 10px;
     height: 350px;
     width: 300px;
-    background-image: url("../assets/pexels-cottonbro-studio-7235051.jpg");
+    background-image: url("../assets/pexels-cottonbro-studio-7233275.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -86,10 +87,10 @@
     top: 10px;
     height: 350px;
     width: 300px;
-    background-image: url("../assets/pexels-koolshooters-6628700.jpg");
-    background-position: center;
+    background-image: url("../assets/pexels-cottonbro-studio-7233269.jpg");
+    background-position: -300px -570px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     border-radius: 200px;
     filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
     z-index: 4;
@@ -100,7 +101,7 @@
     top: 10px;
     height: 350px;
     width: 300px;
-    background-image: url("../assets/pexels-cottonbro-studio-7235060.jpg");
+    background-image: url("../assets/pexels-cottonbro-studio-7235063.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
