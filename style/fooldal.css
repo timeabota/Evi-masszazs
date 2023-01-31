@@ -14,7 +14,7 @@
     background-size: cover;
     z-index: 2;
 }
-.mirror-glass {
+.mirror-part {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,29 +23,57 @@
     top: 80px;
     width: 33vw;
     height: 100vh;
+}
+.mirror-glass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    width: 33vw;
+    height: 100vh;
     background: rgba(208, 193, 176, 0.27);
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(2.5px);
-    z-index: 3;
+    z-index: 2;
+
+    animation: slideInTop 1.2s ease-out;
 }
 .fooldal-logo {
     margin-bottom: 1rem;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    z-index: 4;
 }
 .fooldal-ismerdmeg {
     margin: 5px;
     font-family: var(--navFont);
     font-size: 15px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 4;
 }
 .fooldal-arrow {
     width: 18px;
     margin-bottom: 30px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 4;
+}
+
+/*Animations*/
+@keyframes slideInTop {
+    from {
+        transform: translateY(-1000px);
+    }
+    to {
+        transform: translateY(0px);
+    }
 }
 
 /*mediascreen max-width*/
 @media screen and (max-width: 1024px) {
+    .mirror-part {
+        width: 50vw;
+    }
     .mirror-glass {
         width: 50vw;
     }
@@ -55,13 +83,22 @@
 }
 
 @media screen and (max-width: 768px) {
-    .mirror-glass {
+    .mirror-part {
         display: flex;
         justify-content: center;
         width: 100vw;
         position: absolute;
         height: fit-content;
         top: calc(25vh);
+    }
+    .mirror-glass {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        position: absolute;
+        height: 100%;
+
+        animation: unset;
     }
     .fooldal-logo {
         max-width: 340px;

@@ -46,11 +46,13 @@
     letter-spacing: 0.2em;
     font-family: var(--navFont);
 }
-.nav-list-elem a:hover {
-    color: rgba(0, 0, 0, 0.74);
-}
+
 .nav-list-elem {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nav-list-elem a:hover {
+    color: rgba(0, 0, 0, 0.74);
 }
 .toggle-button {
     display: none;
