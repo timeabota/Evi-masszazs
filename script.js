@@ -1,7 +1,21 @@
-const toggleButton = Array.from(document.querySelectorAll('.toggle-button'))[0];
-const navList = Array.from(document.querySelectorAll('.nav-list'))[0];
+const toggleButton = document.querySelector('.toggle-button');
 
-toggleButton.addEventListener('click', () => toggleNav());
+const hamburgerIcon = (target, clss) => {
+    document.querySelector(`${target}`).classList.toggle(`${clss}`);    
+}
 
-const toggleNav = () => navList.classList.toggle('active');
+if (window.innerWidth <= 768) {
+    toggleButton.addEventListener('click', () => hamburgerIcon('.toggle-button', 'open'));
+    toggleButton.addEventListener('click', () => hamburgerIcon('.nav-list', 'active'));
+} 
 
+// const Button = [
+//     {
+//         "target" : ".toggle-button",
+//         "class" : "open"
+//     },
+//     {
+//         "target" : ".nav-list",
+//         "class" : "active"
+//     }
+// ]

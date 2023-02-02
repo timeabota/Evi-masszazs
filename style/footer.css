@@ -125,6 +125,7 @@
         margin: unset;
     }
     .footer-h3 {
+        align-items: center;
         margin: unset;
         margin-top: 30px;
         text-align: center;
@@ -162,14 +163,12 @@
         margin: unset;
     }
     .footer-h3 {
-        align-items: center;
         margin: unset;
         margin-top: 30px;
         font-size: 20px;
         text-align: center;
     }
     .footer-h4 {
-        align-items: center;
         margin: unset;
         font-size: 20px;
         text-align: center;
