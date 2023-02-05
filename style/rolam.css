@@ -34,6 +34,11 @@
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 2;
 }
+.fadeinleft {
+    animation: fadeInLeft ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
 .rolam-text {
     margin-top: 40px;
     color: var(--darkGreen);
@@ -79,8 +84,36 @@
     border-radius: 400px 0px 0px 400px;
     z-index: 2;
 }
+.fadeinright {
+    animation: fadeInRight ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
 .strong-text {
     color: var(--darkGreen);
+}
+
+/*animations*/
+@keyframes fadeInLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fadeInRight {
+    0%{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
 /*min-width query*/

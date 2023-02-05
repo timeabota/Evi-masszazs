@@ -1,8 +1,8 @@
 **Főoldal**
-css - ismerd meg munkásságom görgessen a rólamhoz és mozogjon
-js  - cache a landing animációra - jelenjen meg a logo fade out
+css - ismerd meg munkásságom görgessen a rólamhoz és mozogjon -- kész
+css  - cache a landing animációra - jelenjen meg a logo fade out --kész 
 
-**Rólam: js**
+**Rólam**
 - virág fadeljen 
 - a szöveg balról ússzon be 
 - a kép jobbról ússzon be 
