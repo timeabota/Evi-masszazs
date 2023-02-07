@@ -5,7 +5,7 @@
     height: 80px;
     width: 100%;
     background-color: var(--brown);
-    z-index: 10;
+    z-index: 20;
 }
 .nav-logo-container {
     display: flex;
@@ -14,7 +14,7 @@
     width: 185px;
     height: 80px;
     margin-left: 10px;
-    z-index: 10;
+    z-index: 20;
 }
 .nav-logo {
     position: inherit;
@@ -30,7 +30,7 @@
     position: absolute;
     width: 100vw;
     height: 80px;
-    z-index: 8;
+    z-index: 19;
 }
 
 /*blokk*/
@@ -112,7 +112,7 @@
     
     .toggle-button {
         display: flex;
-        z-index: 9;
+        z-index: 21;
     }
 
     .toggle-button.open > .bar:nth-child(1) {

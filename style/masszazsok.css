@@ -1,7 +1,7 @@
 .masszazsok {
     position: relative;
     background-color: var(--brown);
-    overflow-x: hidden;
+    overflow-y: hidden;
 }
 .virag1 {
     position: absolute;
@@ -52,7 +52,8 @@
     display: flex;
     justify-content: center;
     position: relative;
-    transition: 0.5s ease-out;
+    transition: 0.5s ease-in-out;
+    z-index: 10;
 }
 .szolgaltatas-img1 {
     position: absolute;
@@ -66,7 +67,6 @@
     border-radius: 200px;
     filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
     z-index: 6;
-    transition: 0.5s ease-out;
 }
 .kep-kor {
     position: absolute;
@@ -93,7 +93,6 @@
     border-radius: 200px;
     filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
     z-index: 4;
-    transition: 0.5s ease-out;
 }
 .szolgaltatas-img3 {
     position: absolute;
@@ -107,7 +106,6 @@
     border-radius: 200px;
     filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
     z-index: 4;
-    transition: 0.5s ease-out;
 }
 .szolgaltatas-mirror {
     width: 400px;
@@ -119,6 +117,7 @@
     box-shadow: 5px 5px 30px 10px #00000027;
     border-radius: 150px;
     z-index: 2;
+    transition: 0.5s ease;
 }
 .szolgaltatas-cim {
     padding-left: 64px;
@@ -153,6 +152,7 @@
     box-shadow: 5px 5px 30px 10px #00000027;
     border-radius: 150px;
     z-index: 3;
+    transition: 0.5s ease-in-out;
 }
 .szolgaltatas-cim1 {
     padding-top: 50px;
@@ -173,17 +173,25 @@
     color: var(--darkGreen);
     z-index: 3;
 }
-.szolgaltatas:hover .szolgaltatas-img1 {
-    opacity: 0.6;
-    transition: 0.5s ease-out;
+
+.szolgaltatas-mirror1:hover {
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out;
 }
-.szolgaltatas:hover .szolgaltatas-img2 {
-    opacity: 0.6;
-    transition: 0.5s ease-out;
+.szolgaltatas:nth-child(1):hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+    z-index: 18;
 }
-.szolgaltatas:hover .szolgaltatas-img3 {
-    opacity: 0.6;
-    transition: 0.5s ease-out;
+.szolgaltatas:nth-child(2):hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+    z-index: 18;
+}
+.szolgaltatas:nth-child(3):hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+    z-index: 18;
 }
 
 /*minwidth query*/

@@ -55,11 +55,19 @@ const observer = new IntersectionObserver (entries => {
             document.querySelector('.rolam-cim').classList.add('fadeinleft');
             document.querySelector('.rolam-kep').classList.add('fadeinright');
             document.querySelector('.rolam-kep-bck').classList.add('fadeinright');
+            document.querySelector('.arlista-jobb-hasab').classList.add('fadeinright');
+            document.querySelector('.footer-right-top').classList.add('fadeinright');
+            document.querySelector('.footer-right-bottom').classList.add('fadeinright');
+            document.querySelector('.footer-nav-list').classList.add('fadeinleft');
         } else {
             document.querySelector('.rolam-text').classList.remove('fadeinleft');
             document.querySelector('.rolam-cim').classList.remove('fadeinleft');
             document.querySelector('.rolam-kep').classList.remove('fadeinright');
             document.querySelector('.rolam-kep-bck').classList.remove('fadeinright');
+            document.querySelector('.arlista-jobb-hasab').classList.remove('fadeinright');
+            document.querySelector('.footer-right-top').classList.remove('fadeinright');
+            document.querySelector('.footer-right-bottom').classList.remove('fadeinright');
+            document.querySelector('.footer-nav-list').classList.remove('fadeinleft');
         }
     })
 })
@@ -68,3 +76,7 @@ observer.observe(document.querySelector('.rolam-text'));
 observer.observe(document.querySelector('.rolam-cim'));
 observer.observe(document.querySelector('.rolam-kep'));
 observer.observe(document.querySelector('.rolam-kep-bck'));
+observer.observe(document.querySelector('.arlista-jobb-hasab'));
+observer.observe(document.querySelector('.footer-right-top'));
+observer.observe(document.querySelector('.footer-right-bottom'));
+observer.observe(document.querySelector('.footer-nav-list'));
